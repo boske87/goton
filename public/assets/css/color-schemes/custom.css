@@ -1,0 +1,510 @@
+/*--------------
+| Add your custom CSS rules to this file
+| Make sure to back this file up before updating your theme!
+--------------*/
+@font-face {
+  font-family: 'OswaldBold';
+  font-style: normal;
+  font-weight: normal;
+  /*src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald.woff) format('woff');*/
+  src: url(../fonts/Oswald/oswald.bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'OswaldRegular';
+  font-style: normal;
+  font-weight: normal;
+  /*src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald.woff) format('woff');*/
+  src: url(../fonts/Oswald/oswald.regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "RobotoRegular";
+    font-style: normal;
+  	font-weight: normal;
+  	src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+p{
+	font-family: "RobotoRegular";
+	font-size: 17px !important;
+}
+.foton-logo{
+	height: 47px;
+}
+.fig{
+	height: 40px;
+	margin-top: 12px;
+	float: left;
+}
+.klub-foton{
+	padding: 5px 10px;
+	border: 2px solid #000;
+	margin: 12px 0 0 10px;
+	float: left;
+	color: #000;
+	font-family: "Myriad Pro";
+}
+.prof-name{
+	position: absolute;
+	bottom: 10%;
+	width: 10%;
+	padding: 1%;
+	border: 4px solid #fff;
+	text-align: center;
+	margin-left: 44%;
+	background: #000;
+	opacity: 0.5;
+	color: #fff;
+}
+.nivo-img, .nivo-title, .nivo-opis, .nivo-video, .nivo-info{
+	width: 100%;
+	text-align: center;
+}
+.nivo-img img{
+	width: 50%;
+}
+.nivo-title h2{
+	font-weight: normal;
+	color: #000;
+	font-family: "OswaldBold";
+	font-size: 34px;
+}
+.nivo-opis p{
+	font-size: 16px;
+	color: #000;
+	padding: 0 20px;
+	font-family: "RobotoRegular";
+}
+.nivo-video iframe{
+	width: 440px;
+	height: 270px;
+}
+.nivo-info{
+	margin: 40px 0 50px;
+}
+.nivo-info span{
+	padding:10px 25px;
+	border: 2px solid #00c668;
+	color: #00c668;
+}
+.profesori{
+	background: #32323a;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.prof-title h3{
+	color: #00c668;
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 80px;
+	margin-top: 40px;
+	font-family: 'OswaldRegular';
+}
+.prof-img{
+	widows: 100%;
+	float: left;
+	text-align: left;
+}
+.prof-img img{
+	width: 50%;
+	float: right;
+	border-radius: 300px;
+}
+.prof-info{
+	width: 100%;
+	text-align: left;
+}
+.prof-info h4{
+	font-weight: normal;
+	color: #fff;
+	width: 100%;
+	font-family: 'OswaldBold';
+}
+.prof-info p{
+	color: #fff;
+	font-size: 14px;
+	width: 100%;
+}
+.prof-info a{
+	text-decoration: none;
+}
+.prof-info span{
+	color: #00c668;
+}
+.klub-info{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.klub-info span{
+	padding:10px 25px;
+	border: 2px solid #fff;
+	color: #fff;
+}
+.klub-info a, .nivo-info a{
+	text-decoration: none;
+}
+.klub{
+	margin-bottom: 0 !important;
+}
+.gallery{
+	background: #000;
+	padding: 15px 0 15px 0;
+}
+.pocetni{
+	background: #00c668;
+	margin-bottom: 0 !important;
+	margin-top: -40px;
+}
+.footer p{
+	color: #fff;
+}
+.foot-menu a, .foot-klub a{
+	color: #fff;
+	text-decoration: none;
+}
+.foot-klub{
+	width: 50%;
+}
+.foot-klub hr{
+	margin: 20px 0;
+}
+.foot-klub img{
+	float: right;
+}
+
+#galleria{
+	height:700px;
+}
+
+.pocetni-info h3, .pocetni-info p{
+	font-weight: normal !important;
+	color: #000;
+	text-align: center !important;
+}
+.pocetni-info hr{
+	border-top: 1px solid #000;;
+}
+.galerija-content{
+	margin-top: 50px;
+	padding-bottom: 90px;
+}
+.galerija-top{
+	margin-top: -40px;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+.galerija-top img{
+	width: 100%;
+}
+.silver-bg{
+	background: #e4e4e4;
+}
+.gallery-box{
+	width: 96%;
+	float: left;
+	margin-left: 2%;
+	margin-bottom: 20px;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.gallery-img, .gallery-img img{
+	width: 100%;
+}
+.gallery-info{
+	width: 90%;	
+	margin-left: 5%;
+}
+.gallery-info h2, .gallery-info a{
+	color: #000;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.gallery-info hr{
+	border-top: 1px solid #000;
+    margin: -7px 0;
+}
+.kruzic{
+	color: #fff;
+    float: left;
+    font-size: 20px;
+    height: 28px;
+    margin-top: 20px;
+    padding-top: 4px;
+    width: 32px;
+    text-align: center;
+	background: url('../../img/kruzic.png');
+}
+.format{
+	float: left;
+	color: #808080;
+	margin: 24px 0 0 15px;	
+}
+.active{
+	color: #1abc9c !important;
+}
+.white-text{
+	color: #fff;
+}
+.profesori-box{
+	width: 72%;
+	margin-left: 14%;
+	margin-bottom: 50px;
+}
+.profesori-box img{
+	width: 100%;
+	border-radius: 300px;
+}
+.profesori-box h2{
+	color: #32323a;
+	font-weight: normal;
+}
+.profesori-box hr{
+	border-top: 2px solid #000;
+    margin: -7px 0 10px 0;
+}
+.profesori-box a{
+	text-decoration: none;
+	color: #00c668;
+	font-size: 16px;
+}
+.profesori-content{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.profesor-top{
+	margin-top: -40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #e4e4e4;
+}
+.prof-img2 img{
+	border-radius: 300px;
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.prof-info2{
+	margin-left: 30px;
+}
+.prof-info2 p {
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+}
+.prof-info2 h4 {
+    color: #000;
+    font-weight: normal;
+    width: 100%;
+}
+.ostali-profesori hr{
+	margin-top: 0;
+}
+.ostali-profesori h2{
+	font-size: 30px;
+	margin: 0;
+}
+.logo-img{
+	float: left;
+}
+.logo-text{
+	height: 47px;
+	float: left;
+	background: url('../../img/logo-lines.png');
+	background-size: 100% 100%;
+	margin-left: 4px;
+}
+.logo-text h1{
+	float: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 12px;    
+    color: #222221;
+    font-weight: bold;
+}
+.logo-text hr{
+	margin: 0;
+	margin-top: 3px;
+	border-top: 1px solid #222221;
+}
+.inline-block{
+	display: inline-block !important;
+}
+.slika-galerije{
+	background: #fff;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+.slika-galerije img{
+	float: left;
+}
+.oblacic{
+	float: left;
+	margin: 22px 0 0 20px;
+}
+.oblacic img{
+	width: 25px;
+}
+.broj-komentara{
+	float: left;
+	color: #808080;
+	margin: 22px 0 0 5px;
+	font-size: 16px;
+}
+.user-comment-img{
+	float: left;
+	margin-top: 13px;
+	width: 15%;
+}
+.user-comment-img img{
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 12px 0 12px;
+	float: right;
+}
+.slika-galerije [class*="span"]{
+	float: left !important;
+}
+.comment-input{
+	float: left;
+	width: 75%;
+	height: 100%;
+}
+.comment-input input{
+	width: 100%;
+	margin-top: 15px;
+	padding: 8px 3%;
+}
+
+.linkovi-info, .vesti-info{
+	width: 100%;	
+}
+.linkovi-info h2, .linkovi-info h2 a{
+	color: #000;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.vesti-info h2, .vesti-info h2 a{
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: normal;
+	margin: 5px 0;
+}
+.linkovi-info a{
+	color: #00b868;
+	text-decoration: none;
+}
+.vesti-info a{
+	color: #000;
+	text-decoration: none;
+}
+.vesti-datum{
+	float: left;
+	width: 100%;
+	margin-bottom: 12px;
+	color: #00cc00;
+}
+.vesti-content{
+	padding-top: 50px;
+	padding-bottom: 90px;
+}
+.vesti-box{
+	width: 96%;
+	float: left;
+	margin-left: 2%;
+	margin-bottom: 20px;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.paging span{
+	margin: 0 3px;
+}
+.paging span a{
+	color: #000;
+	text-decoration: none;	
+}
+.active-page{
+	color: #00c667 !important;
+}
+.linkovi-info hr, .vesti-info hr{
+	border-top: 1px solid #000;
+    margin: 20px 0 0 0;
+}
+.paging hr{
+	border-top: 1px solid #000;
+    margin: 0;
+}
+.kontakt, .prijava{
+	padding-bottom: 100px;
+}
+.kontakt form input, .prijava form input{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 0;
+}
+.kontakt form label, .kontakt p{
+	font-size: 16px;
+	color: #5e5e5d;
+}
+.prijava form label, .prijava p{
+	font-size: 16px;
+	color: #fff;
+}
+.kontakt form textarea, .prijava form textarea{
+	height: 200px;
+	border: 0;
+}
+.kontakt img, .prijava img{
+	width: 80%;
+}
+.submit-contact{
+	border: 2px solid #000;
+    color: #000;
+    float: left;
+    margin: 12px 0 10px 0;
+    padding: 5px 27px;
+    background: none;
+}
+.prijavai-se-btn{
+	border: 2px solid #fff;
+    color: #fff;
+    float: left;
+    margin: 12px 0 10px 0;
+    padding: 5px 27px;
+    background: none;
+}
+.green-bg{
+	background: #00c667;
+}
+.hidden-prof{
+	display: none;
+}
+.foton-pdfs{
+	background: #e4e4e4;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.foton-pdfs hr{
+	border-top: 1px solid #88878f;
+}
+.foton-pdfs span{
+	margin-left: 10px;
+}
+.foton-pdfs a{
+	text-decoration: none;
+	color: #4c4c4c;
+}
+.slide_arr_left{
+	position: absolute;
+	left:0;
+	top:30%;
+	z-index:9999;
+}
+.slide_arr_right{
+	position: absolute;
+	right:0;
+	top:30%;
+	z-index:9999;
+}

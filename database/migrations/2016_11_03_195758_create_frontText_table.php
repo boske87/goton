@@ -13,7 +13,7 @@ class CreateFrontTextTable extends Migration
      */
     public function up()
     {
-        Schema::table('frontText', function (Blueprint $table) {
+        Schema::create('frontText', function (Blueprint $table) {
             $table->increments('id');
             $table->string('Text');
             $table->timestamps();

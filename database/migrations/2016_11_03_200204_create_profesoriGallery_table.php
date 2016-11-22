@@ -13,7 +13,7 @@ class CreateProfesoriGalleryTable extends Migration
      */
     public function up()
     {
-        Schema::table('profesoriGallery', function (Blueprint $table) {
+        Schema::create('profesoriGallery', function (Blueprint $table) {
             $table->increments('id');
             $table->string('main_image')->nullable();
             $table->integer("prof_id");

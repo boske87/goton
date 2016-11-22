@@ -13,7 +13,7 @@ class CreateAdvanceGalleryTable extends Migration
      */
     public function up()
     {
-        Schema::table('advanceGallery', function (Blueprint $table) {
+        Schema::create('advanceGallery', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('main_image')->nullable();

@@ -13,7 +13,7 @@ class CreateFrontGalleryTable extends Migration
      */
     public function up()
     {
-        Schema::table('frontGallery', function (Blueprint $table) {
+        Schema::create('frontGallery', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('main_image')->nullable();

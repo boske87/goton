@@ -13,7 +13,7 @@ class CreatePocetniGalleryTable extends Migration
      */
     public function up()
     {
-        Schema::table('pocetniGallery', function (Blueprint $table) {
+        Schema::create('pocetniGallery', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('main_image')->nullable();

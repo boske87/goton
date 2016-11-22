@@ -13,7 +13,7 @@ class CreateProfesoriTable extends Migration
      */
     public function up()
     {
-        Schema::table('profesori', function (Blueprint $table) {
+        Schema::create('profesori', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->text('desc');

@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::post('/login', ['as' => '/login', 'uses' => 'Admin\AuthController@authenticate']);
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth'] ], function () {
+
+    Route::get('/', 'Admin\AdminController@index');
+});
+
+

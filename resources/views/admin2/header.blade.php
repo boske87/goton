@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
 
     <title></title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
     <script>tinymce.init({selector:'textarea'});</script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -21,50 +21,50 @@
     <script>
         !window.jQuery && document.write('<script src="/admin/fancy/jquery-1.4.3.min.js"><\/script>');
     </script>
-    <script type="text/javascript" src="/fancy/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="/fancy/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <link rel="stylesheet" type="text/css" href="/fancy/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <script type="text/javascript" src="{{ asset('assets/admin/assets/fancy/fancybox/jquery.mousewheel-3.0.4.pack.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/assets/fancy/fancybox/jquery.fancybox-1.3.4.pack.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/assets/fancy/fancybox/jquery.fancybox-1.3.4.css')}}" media="screen" />
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
 
-    <link href="/admin_tmpl/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin/assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin/assets/plugins/bootstrap/css/bootstrap-responsive.min.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin/assets/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin/assets/css/style-metro.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin//assets/css/style.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin//assets/css/style-responsive.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="{{ asset('assets/admin//assets/css/themes/default.css')}}" rel="stylesheet" type="text/css" id="style_color"/>
 
-    <link href="/admin_tmpl/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin//assets/plugins/uniform/css/uniform.default.css')}}" rel="stylesheet" type="text/css"/>
 
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
 
 
-    <link href="/admin_tmpl/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/admin/assets/plugins/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet" type="text/css" />
 
-    <link href="/admin_tmpl/assets/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/admin/assets/plugins/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link href="/admin_tmpl/assets/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ asset('assets/admin/assets/plugins/jqvmap/jqvmap/jqvmap.css')}}" rel="stylesheet" type="text/css" media="screen"/>
 
-    <link href="/admin_tmpl/assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ asset('assets/admin/assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen"/>
 
     <!-- END PAGE LEVEL PLUGIN STYLES -->
 
     <!-- BEGIN PAGE LEVEL STYLES -->
 
-    <link href="assets/css/pages/tasks.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="{{ asset('assets/admin/assets/css/pages/tasks.css')}}" rel="stylesheet" type="text/css" media="screen"/>
 
     <!-- END PAGE LEVEL STYLES -->
 
-    <link rel="shortcut icon" href="/admin_tmpl/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset('assets/admin/favicon.ico')}}" />
 
     <script type="text/javascript">
         var $ =jQuery.noConflict();
@@ -111,7 +111,7 @@
 
             <a class="brand" href="index.html">
 
-                <img src="/admin_tmpl/assets/img/logo.png" alt="logo" />
+                <img src="{{ asset('assets/admin/assets/img/logo-foton.png')}}" alt="logo" />
 
             </a>
 
@@ -121,7 +121,7 @@
 
             <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
 
-                <img src="/admin_tmpl/assets/img/menu-toggler.png" alt="" />
+                <img src="{{ asset('assets/admin/assets/img/menu-toggler.png')}}" alt="" />
 
             </a>
 

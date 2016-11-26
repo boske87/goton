@@ -16,7 +16,6 @@ class AuthController extends Controller {
 
     public function authenticate(LoginRequest $request)
     {
-        print_r($request);
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             // Authentication passed...
             return redirect()->intended('dashboard');

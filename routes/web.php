@@ -22,6 +22,9 @@ Route::post('/login', ['as' => '/login', 'uses' => 'Admin\AuthController@authent
 Route::group(['prefix' => 'admin', 'middleware' => ['auth'] ], function () {
 
     Route::get('/', 'Admin\AdminController@index');
+    Route::get('/home/{id}', 'Admin\AdminController@home');
+
+    Route::patch('edit-home/{id}', ['as' => 'admin.home.update', 'uses' => 'Admin\AdminController@homeUpdate']);
 });
 
 

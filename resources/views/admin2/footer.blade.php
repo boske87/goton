@@ -83,7 +83,7 @@
 
 <script src="{{ asset('assets/admin/assets/plugins/jquery-easy-pie-chart/jquery.easy-pie-chart.js')}}" type="text/javascript"></script>
 
-<script src="{{ asset('assets/admin/assets/plugins/jquery.sparkline.min.js" type="text/javascript')}}"></script>
+<script src="{{ asset('assets/admin/assets/plugins/jquery.sparkline.min.js')}}" type="text/javascript"></script>
 
 <!-- END PAGE LEVEL PLUGINS -->
 

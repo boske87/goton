@@ -15,7 +15,7 @@ class CreateAdvanceTextTable extends Migration
     {
         Schema::create('advanceText', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Text');
+            $table->text('Text');
             $table->timestamps();
         });
     }

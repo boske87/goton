@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Spatie\Glide\GlideServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
 
         /*
          * Package Service Providers...

@@ -13,6 +13,6 @@ class ProfMain extends Model
 
     public function gallery()
     {
-        return $this->hasMany('App\ProfGallery','id','gallery_id');
+        return $this->hasMany('App\ProfGallery','prof_id','id');
     }
 }

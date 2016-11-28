@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\ProfGalleryRequest;
 use App\Http\Requests\ProfMainRequest;
+use App\ProfGallery;
 use App\ProfMain;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -65,7 +67,29 @@ class ProfController extends Controller
     {
         $prof = ProfMain::find($id);
 
-        return view('admin.prof.add', compact('prof'));
+        return view('admin.prof.gallery', compact('prof'));
+    }
+
+
+    public function galleryAdd($id)
+    {
+
+
+        return view('admin.prof.gallery-add', compact('id'));
+
+    }
+
+    public function galleryStore(ProfGalleryRequest $request)
+    {
+        $input = $request->all();
+
+        // upload
+        $inputNew['prof_id'] = $input['id'];
+        $inputNew['main_image'] = $this->upload('main_image', 'img/gallery');
+
+        ProfGallery::create($inputNew);
+
+        return redirect()->route('admin.prof.view', $input['id'])->withFlashMessage("Insert image successfully.")->withFlashType('success');
     }
 
     public function delete($id)
@@ -73,5 +97,12 @@ class ProfController extends Controller
         ProfMain::destroy($id);
 
         return redirect()->route('admin.prof')->withFlashMessage("Delete image successfully.")->withFlashType('success');
+    }
+
+    public function deleteImageGallery($id)
+    {
+        ProfGallery::destroy($id);
+
+        return redirect()->back()->withFlashMessage("Delete image successfully.")->withFlashType('success');
     }
 }

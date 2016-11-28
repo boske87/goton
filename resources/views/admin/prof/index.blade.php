@@ -35,7 +35,7 @@
                             <a class="fancybox" rel="group" href="{{ Image::load('gallery/' . $item->main_image, ['h' => 10]) }}"><img src="{{ Image::load('gallery/' . $item->main_image, ['h' => 10]) }}" width="150px" alt=""></a>
                         </td>
                         <td>{{$item->name}}</td>
-                        <td><a href="{{route('admin.prof.view','1')}}">View</a></td>
+                        <td><a href="{{route('admin.prof.view',$item->id)}}">View</a></td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.prof.edit', $item->id) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>

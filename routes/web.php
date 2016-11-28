@@ -65,6 +65,20 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'] ], function () {
 
     Route::get('/prof/view/{id}', ['as' => 'admin.prof.view', 'uses' => 'Admin\ProfController@view']);
 
+    Route::get('/prof/gallery/add/{id}', ['as' => 'admin.prof.gallery.add', 'uses' => 'Admin\ProfController@galleryAdd']);
+    Route::post('/prof/gallery/add', ['as' => 'admin.prof.gallery.add', 'uses' => 'Admin\ProfController@galleryStore']);
+
+    Route::delete('/prof/gallery/delete/{id}', ['as' => 'admin.prof.gallery.delete', 'uses' => 'Admin\ProfController@deleteImageGallery']);
+
+
+    //news
+    Route::get('/news', ['as' => 'admin.news', 'uses' => 'Admin\NewsController@index']);
+
+    Route::get('/news/add', ['as' => 'admin.news.add', 'uses' => 'Admin\NewsController@add']);
+    Route::post('/news/add', ['as' => 'admin.news.add', 'uses' => 'Admin\NewsController@store']);
+    Route::delete('/news/delete/{id}', ['as' => 'admin.news.delete', 'uses' => 'Admin\NewsController@delete']);
+
+
 
 
 });

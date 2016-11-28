@@ -11,7 +11,7 @@
             @endif
         @if (isset($item) and $item->{$inputName})
             <p class="help-block">
-                <a href="{{ asset(Config::get('project.uploads_folder') . (isset($directory) ? $directory . '/' : '') .  $item->{$inputName}) }}" target="_blank">
+                <a  class="fancybox" href="{{ asset(Config::get('project.uploads_folder') . (isset($directory) ? $directory . '/' : '') .  $item->{$inputName}) }}" target="_blank">
                     @if(isset($img))
                         <img src="{{ Image::load((isset($directory) ? $directory . '/' : '') . $img, isset($imgConfig) ? $imgConfig : ['h' => 150]) }}" alt=""/>
                     @else

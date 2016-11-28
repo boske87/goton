@@ -1,6 +1,9 @@
 @extends('admin.layouts.admin')
 
+
 @section('content')
+
+    @include('admin/prof/js_edit')
 
     <h1></h1>
 
@@ -10,7 +13,7 @@
 
     <div class="cms-options">
         <div class="cms-options-title-action">
-            <p class="cms-options-title lead"> - Pocetna</p>
+            <p class="cms-options-title lead">Dodavanje profesora</p>
         </div>
     </div>
     @include('admin.layouts.crud.flash_message')
@@ -22,10 +25,10 @@
 
                     <fieldset>
 
-                    {!! Form::open(['route' => 'admin.home-gallery-add', 'files' => true, 'class' => 'form-horizontal']) !!}
+                    {!! Form::open(['route' => 'admin.prof.add', 'files' => true, 'class' => 'form-horizontal']) !!}
 
 
-                        <!-- Image ALT Form Input -->
+                    <!-- Image ALT Form Input -->
                         <div class="form-group{!! $errors ->has('name') ? ' has-error' : '' !!}">
                             {!! Form::label('Name', 'Name', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
@@ -33,6 +36,15 @@
                                 {!! $errors ->first('name', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
+
+                        <div class="form-group{!! $errors ->has('desc') ? ' has-error' : '' !!}">
+                            {!! Form::label('desc', 'Opis*', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-10">
+                                {!! Form::textarea('desc', null, ['id'=>'desc', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! $errors ->first('desc', '<span class="help-block">:message</span>') !!}
+                            </div>
+                        </div>
+
                         @include('admin.layouts.modules.file_input', [
                                          'label' => 'Image',
                                          'inputName' => 'main_image',
@@ -44,7 +56,7 @@
                             <div class="col-sm-offset-2 col-sm-10">
                                 {!! Form::hidden('_token',csrf_token()) !!}
                                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                                <a href="{{route('admin.home-gallery')}}" class="btn btn-link pull-right">Cancel</a>
+                                <a href="{{route('admin.prof')}}" class="btn btn-link pull-right">Cancel</a>
                             </div>
                         </div>
                         {!! Form::close() !!}

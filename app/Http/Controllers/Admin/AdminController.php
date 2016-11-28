@@ -67,7 +67,10 @@ class AdminController extends Controller
         return redirect()->route('admin.home-gallery')->withFlashMessage("Insert image successfully.")->withFlashType('success');
     }
 
-    public function homeGalleryDelete()
+    public function homeGalleryDelete($id)
     {
+        HomeGallery::destroy($id);
+
+        return redirect()->route('admin.home-gallery')->withFlashMessage("Delete image successfully.")->withFlashType('success');
     }
 }

@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class HomeGallery extends Model
+class BasicGallery extends Model
 {
-
-    protected $table = 'frontGallery';
+    protected $table = 'pocetniGallery';
     protected $fillable = ['name','main_image','ordering'];
 }

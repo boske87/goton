@@ -7,8 +7,8 @@
     <div class="cms-options">
         <div class="cms-options-title-action">
             @include('admin.layouts.crud.flash_message')
-            <h3 class="cms-options-title">Pocetna galerija</h3>
-            {!! link_to_route('admin.home-gallery-add', 'Add', null, ['class' => 'cms-options-action btn btn-lg btn-primary']) !!}
+            <h3 class="cms-options-title">Napredni nivo galerija</h3>
+            {!! link_to_route('admin.advance-gallery-add', 'Add', null, ['class' => 'cms-options-action btn btn-lg btn-primary']) !!}
         </div>
         <div class="cms-options-filter">
 
@@ -20,7 +20,7 @@
 @stop
 
 @section('index_content')
-    <span id="tableName" style="display: none; visibility: hidden;">frontGallery</span>
+    <span id="tableName" style="display: none; visibility: hidden;">advanceGallery</span>
     <div class="table-responsive">
         @if($items->count()>0)
 
@@ -41,7 +41,7 @@
                         <td>{{$item->name}}</td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
-                                {!! Form::open(['method' => 'DELETE', 'route' => ['admin.home-gallery-delete', $item->id], 'onsubmit' => "return confirm('Are you sure you want to DELETE this item?')"]) !!}
+                                {!! Form::open(['method' => 'DELETE', 'route' => ['admin.advance-gallery-delete', $item->id], 'onsubmit' => "return confirm('Are you sure you want to DELETE this item?')"]) !!}
                                 <button type="submit" class="btn btn-default"><span class="entypo entypo-cross"></span></button>
                                 {!! Form::close() !!}
                             </div>
@@ -54,7 +54,6 @@
             </table>
 
         @else
-
             <p class="alert alert-warning">There are no items.</p>
         @endif
 

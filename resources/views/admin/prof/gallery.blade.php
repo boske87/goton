@@ -7,7 +7,7 @@
     <div class="cms-options">
         <div class="cms-options-title-action">
             @include('admin.layouts.crud.flash_message')
-            <h3 class="cms-options-title">Pocetna galerija</h3>
+            <h3 class="cms-options-title">{{$prof->name}} - Gallery</h3>
             {!! link_to_route('admin.home-gallery-add', 'Add', null, ['class' => 'cms-options-action btn btn-lg btn-primary']) !!}
         </div>
         <div class="cms-options-filter">

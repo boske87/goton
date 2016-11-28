@@ -15,7 +15,13 @@ class CreatePocetniTextTable extends Migration
     {
         Schema::create('pocetniText', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('Text');
+            $table->text('Text1');
+            $table->text('Text2');
+            $table->text('Text3');
+            $table->text('Text4');
+            $table->text('Text5');
+            $table->text('Text6');
+            $table->text('Text7');
             $table->timestamps();
         });
     }

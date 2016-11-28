@@ -26,6 +26,8 @@
         <script src="{{ asset('assets/admin/js/vendor/bootstrap/bootstrap.js')}}"></script>
         <script src="{{ asset('assets/admin/js/vendor/sticky-kit/jquery.sticky-kit.min.js')}}"></script>
         <script src="{{ asset('assets/admin/js/scripts.js')}}"></script>
+        <link rel="stylesheet" href="{{ asset('assets/admin/fancy/source/jquery.fancybox.css?v=2.1.5')}}" type="text/css" media="screen" />
+        <script type="text/javascript" src="{{ asset('assets/admin/fancy/source/jquery.fancybox.pack.js?v=2.1.5')}}"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
@@ -40,6 +42,11 @@
                 });
 
 
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".fancybox").fancybox();
             });
         </script>
 

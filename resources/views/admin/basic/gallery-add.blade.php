@@ -10,7 +10,7 @@
 
     <div class="cms-options">
         <div class="cms-options-title-action">
-            <p class="cms-options-title lead"> - Pocetna</p>
+            <p class="cms-options-title lead">Pocetni Nivo</p>
         </div>
     </div>
     @include('admin.layouts.crud.flash_message')
@@ -22,10 +22,10 @@
 
                     <fieldset>
 
-                    {!! Form::open(['route' => 'admin.home-gallery-add', 'files' => true, 'class' => 'form-horizontal']) !!}
+                    {!! Form::open(['route' => 'admin.basic-gallery-add', 'files' => true, 'class' => 'form-horizontal']) !!}
 
 
-                        <!-- Image ALT Form Input -->
+                    <!-- Image ALT Form Input -->
                         <div class="form-group{!! $errors ->has('name') ? ' has-error' : '' !!}">
                             {!! Form::label('Name', 'Name', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
@@ -44,7 +44,7 @@
                             <div class="col-sm-offset-2 col-sm-10">
                                 {!! Form::hidden('_token',csrf_token()) !!}
                                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                                <a href="{{route('admin.home-gallery')}}" class="btn btn-link pull-right">Cancel</a>
+                                <a href="{{route('admin.basic-gallery')}}" class="btn btn-link pull-right">Cancel</a>
                             </div>
                         </div>
                         {!! Form::close() !!}

@@ -17,7 +17,7 @@ class CreateAdvanceGalleryTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('main_image')->nullable();
-            $table->integer("order");
+            $table->integer("ordering");
             $table->timestamps();
         });
     }

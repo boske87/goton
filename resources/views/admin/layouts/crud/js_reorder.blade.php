@@ -1,4 +1,4 @@
-<script src="{{ admin_asset('js/vendor/jquery/jquery.tablednd.js') }}"></script>
+<script src="{{ asset('assets/admin/js/vendor/jquery/jquery.tablednd.js') }}"></script>
 <script>
 
     var order;

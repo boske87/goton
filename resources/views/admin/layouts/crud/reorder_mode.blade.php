@@ -29,10 +29,10 @@
             href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,latin-ext'
             rel='stylesheet' type='text/css'>
 
-    <script src="{{ admin_asset('js/vendor/jquery/jquery-1.10.2.min.js')}}"></script>
-    <script src="{{ admin_asset('js/vendor/bootstrap/bootstrap.js')}}"></script>
-    <script src="{{ admin_asset('js/vendor/sticky-kit/jquery.sticky-kit.min.js')}}"></script>
-    <script src="{{ admin_asset('js/scripts.js')}}"></script>
+    <script src="{{ asset('assets/admin/js/vendor/jquery/jquery-1.10.2.min.js')}}"></script>
+    <script src="{{ asset('assets/admin/js/vendor/bootstrap/bootstrap.js')}}"></script>
+    <script src="{{ asset('assets/admin/js/vendor/sticky-kit/jquery.sticky-kit.min.js')}}"></script>
+    <script src="{{ asset('assets/admin/js/scripts.js')}}"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {

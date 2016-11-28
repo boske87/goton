@@ -19,11 +19,9 @@
                     <div class="panel-body">
                         <ul class="nav nav-pills nav-stacked">
 
-							<li class=""><a href="">Pocetna strana</a></li>
-							<li class=""><a href="">Pocetni nivo</a></li>
-                            <li class=""><a href="">Napredni nivo</a></li>
-                            <li class=""><a href="">Profesori</a></li>
-                            <li class=""><a href="">Vesti</a></li>
+							<li class=""><a href="">Pocetna strana text</a></li>
+                            <li class=""><a href="">Pocetna strana gallery</a></li>
+
                         </ul>
                     </div>
                 </div>

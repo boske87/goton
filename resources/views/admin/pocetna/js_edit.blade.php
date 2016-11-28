@@ -20,6 +20,18 @@
             formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']
         });
 
+        $('#text4').redactor({
+            buttons: ['link'],
+            buttonSource: true,
+            formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']
+        });
+
+        $('#text5').redactor({
+            buttons: ['link'],
+            buttonSource: true,
+            formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']
+        });
+
     });
 </script>
 

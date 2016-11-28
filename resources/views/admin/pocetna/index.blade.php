@@ -20,7 +20,7 @@
         <li class="active"><a data-toggle="tab" href="#tab-1">Text Block</a></li>
 
     </ul>
-    {!! Form::model(['method' => 'PATCH', 'route' => ['admin.home.update', $id], 'class' => 'form-horizontal']) !!}
+    {!! Form::open(['method' => 'PATCH', 'route' => ['admin.home.update', $id], 'class' => 'form-horizontal']) !!}
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="tab-content">
@@ -30,7 +30,7 @@
                         <div class="form-group{!! $errors ->has('body') ? ' has-error' : '' !!}">
                             {!! Form::label('body', 'Tekst 1*', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::textarea('body', null, ['id'=>'text', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! Form::textarea('Text1', $homeText->Text1, ['id'=>'text', 'class' => 'form-control', 'rows' => 4]) !!}
                                 {!! $errors ->first('body', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                         <div class="form-group{!! $errors ->has('body') ? ' has-error' : '' !!}">
                             {!! Form::label('body2', 'Tekst 2*', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::textarea('body2', null, ['id'=>'text2', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! Form::textarea('Text2', $homeText->Text2, ['id'=>'text2', 'class' => 'form-control', 'rows' => 4]) !!}
                                 {!! $errors ->first('body2', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
@@ -46,10 +46,27 @@
                         <div class="form-group{!! $errors ->has('body3') ? ' has-error' : '' !!}">
                             {!! Form::label('body3', 'Tekst 3*', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::textarea('body3', null, ['id'=>'text3', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! Form::textarea('Text3', $homeText->Text3, ['id'=>'text3', 'class' => 'form-control', 'rows' => 4]) !!}
                                 {!! $errors ->first('body3', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
+
+                        <div class="form-group{!! $errors ->has('body4') ? ' has-error' : '' !!}">
+                            {!! Form::label('body4', 'Pocetni nivo link you tube*', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-10">
+                                {!! Form::textarea('Text4', $homeText->Text4, ['id'=>'text4', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! $errors ->first('body4', '<span class="help-block">:message</span>') !!}
+                            </div>
+                        </div>
+
+                        <div class="form-group{!! $errors ->has('body5') ? ' has-error' : '' !!}">
+                            {!! Form::label('body5', 'Napredni nivo link you tube*', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-10">
+                                {!! Form::textarea('Text5', $homeText->Text5, ['id'=>'text5', 'class' => 'form-control', 'rows' => 4]) !!}
+                                {!! $errors ->first('body5', '<span class="help-block">:message</span>') !!}
+                            </div>
+                        </div>
+
 
                     </fieldset>
                 </div>

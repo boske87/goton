@@ -49,7 +49,11 @@
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
+        ],
+        "chmode": [
+          "chmod -R 777 storage bootstrap public"
         ]
+
     },
     "config": {
         "preferred-install": "dist"

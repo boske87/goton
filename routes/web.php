@@ -22,6 +22,11 @@ Route::get('/napredni-nivo', ['as' => '/napredni-nivo', 'uses' => 'IndexControll
 Route::get('/prijava', ['as' => '/prijava', 'uses' => 'IndexController@prijava']);
 Route::get('/profesori', ['as' => '/profesori', 'uses' => 'IndexController@prof']);
 Route::get('/profesor/{slug}', ['as' => 'profesor', 'uses' => 'IndexController@profOne']);
+Route::get('/galerija-fotografija', ['as' => 'galerija-fotografija', 'uses' => 'GalleryController@index']);
+Route::get('/kontakt', ['as' => 'kontakt', 'uses' => 'IndexController@contact']);
+Route::get('/linkovi', ['as' => 'linkovi', 'uses' => 'IndexController@links']);
+Route::get('/vesti', ['as' => 'vesti', 'uses' => 'NewsController@index']);
+Route::get('/vest/{slug}', ['as' => 'vest', 'uses' => 'NewsController@news']);
 
 
 Auth::routes();

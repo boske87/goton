@@ -1,9 +1,9 @@
 <body>
 <a class="slide_arr_left slide_arr" href="javascript:void(0)">
-    <img src="{{ asset('assets/img/arrow-down-gray-md.png')}}" alt="" style="width:130px;margin-left: 10px;" />
+    {{--<img src="{{ asset('assets/img/arrow-down-gray-md.png')}}" alt="" style="width:130px;margin-left: 10px;" />--}}
 </a>
 <a class="slide_arr_right slide_arr" href="javascript:void(0)">
-    <img src="{{ asset('assets/img/arr_down.png')}}" alt="" />
+    {{--<img src="{{ asset('assets/img/arr_down.png')}}" alt="" />--}}
 </a>
 
 <div class="wrapper">

@@ -44,7 +44,7 @@
                             <img src="{{ Image::load('gallery/' . $one->main_image, ['h' => 10]) }}">
                             <h2>{{ $one->name }}</h2>
                             <hr/>
-                            <a href="/profesor/{{ $one->id }}">&rsaquo; Saznaj više</a>
+                            <a href="{{route('profesor',$one->slug)}}">&rsaquo; Saznaj više</a>
                         </div>
                     </div>
                     @endforeach

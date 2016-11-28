@@ -17,7 +17,7 @@ class IndexController extends Controller
     {
         $prof = ProfMain::get();
         $front = HomeText::find(1);
-        $frontGallery = HomeGallery::get();
+        $frontGallery = HomeGallery::orderby('ordering','asc')->get();
         return view('front.home', compact('prof','front', 'frontGallery'));
     }
 
@@ -56,5 +56,15 @@ class IndexController extends Controller
         $prof = ProfMain::get();
 
         return view('front.prof-one',compact('profOne','prof'));
+    }
+
+    public function contact()
+    {
+        return view('front.contact');
+    }
+
+    public function links()
+    {
+        return view('front.links');
     }
 }

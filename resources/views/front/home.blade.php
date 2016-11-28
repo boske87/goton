@@ -111,7 +111,7 @@
                                         <div class="prof-info">
                                             <h4>{!! $item->name !!}</h4>
                                             <p>
-                                                {!! $item->desc !!}
+                                                {!! substr($item->desc,0,180) !!}...
                                             </p>
                                             <a href="#">
                                                 <span class="vise">VIŠE</span>
@@ -140,7 +140,7 @@
                         <p>
                             {!! $front->Text1 !!}
                         </p>
-                        <p id="hid" style="display: none">{!! $front->Text2 !!}</p>
+                        <div id="hid" style="display: none">{!! $front->Text3 !!}</div>
                         <div class="klub-info">
                             <a href="#" onclick="show();return false;">
                                 <span id="more">SAZNAJ VIŠE</span>

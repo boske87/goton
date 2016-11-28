@@ -38,22 +38,18 @@
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="/profesori"  class="">Profesori</a>
+
                                     <ul class="sub-menu">
+
                                         <li class="hidden-prof">
                                             <a href="/profesori">Svi profesori</a>
                                         </li>
-                                        <li>
-                                            <a href="/profesor/2">Saša Preradović</a>
-                                        </li>
-                                        <li>
-                                            <a href="/profesor/3">Aleksandar Kelić</a>
-                                        </li>
-                                        <li>
-                                            <a href="/profesor/4">Pera Perić</a>
-                                        </li>
-                                        <li>
-                                            <a href="/profesor/5">Jova Jović</a>
-                                        </li>
+                                        @foreach($prof as $one)
+                                            <li>
+                                                <a href="{{route('profesor',$one->slug)}}">{{$one->name}}</a>
+                                            </li>
+                                        @endforeach
+
                                     </ul>
                                 </li>
                                 <li>

@@ -32,10 +32,10 @@
                         KLUB FOTON
                     <hr/>
                     <a href="#">Registruj se</a>
-                    <img src="/img/plus.png" width="20">
+                    <img src="{{asset('assets//img/plus.png')}}" width="20">
                     <hr/>
                     <a href="#">Moj nalog</a>
-                    <img src="/img/peo.png" width="20">
+                    <img src="{{asset('assets//img/peo.png')}}" width="20">
                     <hr/>
                     </p>
                 </div>
@@ -90,9 +90,6 @@
         }, 2000);
     });
 </script>
-
-<?=isset($scripts_footer)?$scripts_footer:""?>
-
         <!-- END JAVASCRIPTS -->
 </body>
 </html>

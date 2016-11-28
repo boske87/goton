@@ -2,7 +2,8 @@
 <html dir="ltr" lang="en" class="no-js">
 
 <head>
-    <base href="http://novi.sasapreradovic.com/">
+    {{--<base href="http://novi.sasapreradovic.com/">--}}
+    <base href="http://localhost:8000/">
     <meta charset="UTF-8">
 
     <meta name="description" content="Skola Fotografije Foton" />
@@ -20,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/fonts/font-awesome.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/flexslider.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/js/tfingi-megamenu/tfingi-megamenu-frontend.css')}}" />
+    <script type="text/javascript" src="{{ asset('assets/js/jquery-1.10.2.min.js')}}"></script>
+    <script src="{{ asset('assets/js/galleria-1.4.2.js')}}"></script>
 
 
     <!-- Comment following two lines to use LESS -->

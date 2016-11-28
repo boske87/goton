@@ -20,13 +20,13 @@
             formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']
         });
 
-        $('#text42').redactor({
+        $('#text4').redactor({
             buttons: ['link'],
             buttonSource: true,
             formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']
         });
 
-        $('#text52').redactor({
+        $('#text5').redactor({
             buttons: ['link'],
             buttonSource: true,
             formatting: ['p', 'h2', 'h3', 'h4', 'blockquote']

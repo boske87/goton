@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', ['as' => '/login', 'uses' => 'IndexController@index']);
+
+Route::get('/pocetni-nivo', ['as' => '/pocetni-nivo', 'uses' => 'IndexController@basic']);
+Route::get('/napredni-nivo', ['as' => '/napredni-nivo', 'uses' => 'IndexController@advance']);
+Route::get('/prijava', ['as' => '/prijava', 'uses' => 'IndexController@prijava']);
+Route::get('/profesori', ['as' => '/profesori', 'uses' => 'IndexController@prof']);
+Route::get('/profesor/{slug}', ['as' => 'profesor', 'uses' => 'IndexController@profOne']);
+
 
 Auth::routes();
 

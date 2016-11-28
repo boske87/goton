@@ -11,10 +11,12 @@
         <!-- Slider -->
         <section class="flexslider">
             <ul class="slides">
-                <li>
-                    <img src="http://admin.sasapreradovic.com/upload/" alt="" />
-                    <span class="prof-name"></span>
-                </li>
+                @foreach($frontGallery as $one)
+                    <li>
+                        <img src="{{ Image::load('gallery/' . $one->main_image, ['h' => 10]) }}" alt="" />
+                        <span class="prof-name">{{$one->name}}</span>
+                    </li>
+                @endforeach
             </ul>
         </section>
         <!-- End class="flexslider" -->
@@ -23,11 +25,11 @@
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <img src="/img/big-foton.png" alt="Big Foton">
+                        <img src="{{asset('assets/img/big-foton.png')}}" alt="Big Foton">
                     </div>
                     <div class="span12">
                         <p>
-
+                            {!! $front->Text1 !!}
                         </p>
                     </div>
                 </div>
@@ -41,7 +43,7 @@
                 <div class="row">
                     <div class="span6">
                         <div class="nivo-img">
-                            <img src="/img/pocetni-icon.png" alt="Pocetni Nivo">
+                            <img src="{{asset('assets/img/pocetni-icon.png')}}" alt="Pocetni Nivo">
                         </div>
                         <div class="nivo-title">
                             <h2>POČETNI NIVO</h2>
@@ -52,7 +54,7 @@
                             </p>
                         </div>
                         <div class="nivo-video">
-                            <iframe width="440" height="270" src="" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="440" height="270" src="{{ $front->Text4 }}" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="nivo-info">
                             <a href="/pocetni-nivo">
@@ -62,7 +64,7 @@
                     </div>
                     <div class="span6">
                         <div class="nivo-img">
-                            <img src="/img/napredni-icon.png" alt="Napredni Nivo">
+                            <img src="{{asset('assets/img/napredni-icon.png')}}" alt="Napredni Nivo">
                         </div>
                         <div class="nivo-title">
                             <h2>NAPREDNI NIVO</h2>
@@ -73,7 +75,7 @@
                             </p>
                         </div>
                         <div class="nivo-video">
-                            <iframe src="" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="{{ $front->Text5 }}" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="nivo-info">
                             <a href="/napredni-nivo">
@@ -96,20 +98,20 @@
                     </div>
                     <div class="span12">
                         <ul class="bxslider">
-                            <?php foreach($prof as $one_p){ ?>
+                            @foreach($prof as $item)
                             <li>
                                 <div class="row">
                                     <div class="span1"></div>
                                     <div class="span4">
                                         <div class="prof-img">
-                                            <img src="http://admin.sasapreradovic.com/upload/<?php echo $one_p['Img'];?>" alt="profa1">
+                                            <img src="{{ Image::load('gallery/' . $item->main_image, ['h' => 10]) }}" alt="profa1">
                                         </div>
                                     </div>
                                     <div class="span4">
                                         <div class="prof-info">
-                                            <h4><?php echo $one_p['Name'];?></h4>
+                                            <h4>{!! $item->name !!}</h4>
                                             <p>
-                                                <?php echo $one_p['Desc'];?>
+                                                {!! $item->desc !!}
                                             </p>
                                             <a href="#">
                                                 <span class="vise">VIŠE</span>
@@ -119,7 +121,7 @@
                                     <div class="span3"></div>
                                 </div>
                             </li>
-                            <?php } ?>
+                            @endforeach
                         </ul>
 
                     </div>
@@ -132,13 +134,13 @@
             <div class="container">
                 <div class="row">
                     <div class="span12">
-                        <img src="/img/klub-foton.png" alt="BKlub Foton">
+                        <img src="{{asset('assets//img/klub-foton.png')}}" alt="BKlub Foton">
                     </div>
                     <div class="span12">
                         <p>
-                            <?php echo $text[1]['Text'];?>
+                            {!! $front->Text1 !!}
                         </p>
-                        <p id="hid" style="display: none"><?php echo $text[2]['Text'];?></p>
+                        <p id="hid" style="display: none">{!! $front->Text2 !!}</p>
                         <div class="klub-info">
                             <a href="#" onclick="show();return false;">
                                 <span id="more">SAZNAJ VIŠE</span>

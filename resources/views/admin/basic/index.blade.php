@@ -1,7 +1,7 @@
 @extends('admin.layouts.admin')
 
 @section('content')
-    @include('admin/pocetna/js_edit')
+    @include('admin/basic/js_edit')
 
 
     <h1></h1>
@@ -20,7 +20,7 @@
         <li class="active"><a data-toggle="tab" href="#tab-1">Text Block</a></li>
 
     </ul>
-    {!! Form::open(['method' => 'PATCH', 'route' => ['admin.home.update', $id], 'class' => 'form-horizontal']) !!}
+    {!! Form::open(['method' => 'PATCH', 'route' => ['admin.basic.update', $id], 'class' => 'form-horizontal']) !!}
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="tab-content">
